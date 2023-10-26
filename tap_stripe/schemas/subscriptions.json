@@ -489,6 +489,198 @@
         "string"
       ],
       "format": "date-time"
+    },
+    "description": {
+      "type": [
+         "null",
+         "string"
+      ]
+    },
+    "automatic_tax":{
+      "type": [
+         "null",
+         "object"
+      ],
+      "properties": {
+         "enabled": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        }
+      }
+    },
+    "cancellation_details":{
+      "type":[
+         "null",
+         "object"
+      ],
+      "properties":{
+         "comment":{
+            "type":[
+               "null",
+               "string"
+            ]
+         },
+         "feedback":{
+            "type":[
+               "null",
+               "string"
+            ]
+         },
+         "reason":{
+            "type":[
+               "null",
+               "string"
+            ]
+         }
+      }
+   },
+   "default_tax_rates": {
+    "type": [
+      "null",
+      "array"
+    ],
+    "items": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ] 
+        },
+        "active": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "country": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "description": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "display_name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "effecive_percentage": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "singer.decimal"
+        },
+        "inclusive": {
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "jurisdiction": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "percentage": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "singer.decimal"
+        },
+        "state": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "tax_type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    }
+  },
+  "currency": {
+    "type": [
+      "null",
+      "string"
+    ]
+  },
+   "trial_settings": {
+    "type":[
+       "null",
+       "object"
+    ],
+      "properties": {
+        "end_behavior": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "properties": {
+            "missing_payment_method": {
+              "type": [
+                "null",
+                "string"
+              ],
+              "enum": ["cancel", "pause", "create_invoice"]
+            }
+          }
+        }
+      }
+    },
+   "pending_update":{
+    "type":[
+       "null",
+       "object"
+    ],
+    "properties": {
+       "billing_cycle_anchor":{
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+       },
+       "expires_at":{
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+       },
+       "trial_end":{
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+       },
+       "trial_from_plan":{
+        "type":[
+           "null",
+           "boolean"
+        ]
+      }       
     }
   }
+}
 }

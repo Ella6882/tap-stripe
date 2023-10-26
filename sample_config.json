@@ -1,4 +1,5 @@
 {
-  "client_secret": "<stripe_platform_client_secret>",
-  "account_id": "<stripe_account_id>"
+  "client_secret": "",
+  "account_id": "",
+  "start_date": ""
 }
