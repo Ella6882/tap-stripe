@@ -955,6 +955,121 @@
       ],
       "properties": {}
     },
+    "shipping_details": {
+      "type":[
+         "null",
+         "object"
+      ],
+        "properties": {
+          "name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "phone": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "address": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "city": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "country": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "line1": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "line2": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "postal_code": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "state": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "amount_shipping": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "applicaton": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "from_invoice": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "action": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "invoice": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "subtotal_excluding_tax": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "total_excluding_tax": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "effective_at": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+      },
     "updated": {
       "type": [
         "null",
