@@ -147,12 +147,6 @@
         "boolean"
       ]
     },
-    "proration_details": {
-      "type": [
-        "null",
-        "object"
-      ]
-    },
     "period": {
       "type": [
         "null",
@@ -499,6 +493,47 @@
         "null",
         "string"
       ]
-    }
+    },
+    "unit_amount_excluding_tax": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "singer.decimal"
+    },
+    "amount_excluding_tax": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "proration_details": {
+      "type":[
+         "null",
+         "object"
+      ],
+        "properties": {
+          "credited_items": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "invoice": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "invoice_line_items": {
+                "type": [
+                  "null",
+                  "array"
+                ]
+              }
+            }
+          }
+        }
+      }    
   }
 }
